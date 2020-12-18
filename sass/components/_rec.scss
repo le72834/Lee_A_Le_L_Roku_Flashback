@@ -1,0 +1,63 @@
+#recommanded {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+}
+.button-wrapper {
+    button {
+        
+        margin: 0px 20px;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: black;
+        border: none;
+        &:hover {
+            background-color: #2E0854;
+            color: white;
+            
+        }
+    }
+}
+.tvshows-player {
+    margin-top: 30px;
+    text-align: center;
+    img{
+        width: 70%;
+    }
+    h3 {
+        margin: 20px 0px;
+    }
+}
+.gameshow-player {
+    @extend .tvshows-player;
+}
+.movies-player {
+    @extend .tvshows-player;
+}
+@media screen and (min-width: $tablet-size) {
+    .button-wrapper {
+        text-align: center;
+        button {
+            padding: 15px 25px;
+         }
+    }
+    .gameshow-rec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tvshows-rec {
+        @extend .gameshow-rec;
+    }
+    .movies-rec {
+        @extend .gameshow-rec;
+    }
+
+}
