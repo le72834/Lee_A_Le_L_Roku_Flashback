@@ -1,0 +1,45 @@
+.years-info {
+    display: flex;
+    margin: 20px 0px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 10px;
+        background-color:  black;
+            opacity: 0.8;
+        &:hover {
+            border: none;
+            background-color:  #2E0854;
+            
+        }
+    }
+
+}
+.years-info2 {
+    
+    //background-color: white;
+    padding: 30px;
+    margin: 0px;
+    
+    
+    @extend .years-info;
+    a {
+        background-color: #d9cced;
+        border: none;
+        opacity: 1;
+    }
+}
+@media screen and (min-width: $desktop-size) {
+    .years-info {
+        margin-left: 200px;
+        a {
+            
+            margin: 0 20px;
+        }
+    }
+
+}

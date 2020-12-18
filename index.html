@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roku Flashback</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="container">
+    <div class="nav-position">
+        <div class="main-nav-con scroll-menu">
+            <a href="index.html" class="logo"><img src="images/logo1.png" alt="logo" ></a>
+            <div class="hamburger-nav-con">
+                <a class ="hamburger-con hamburger-con2 hamburger hamburger-scroll-menu"><span></span></a>
+                <nav class="main-nav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul class="mainNav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">TVShows</a></li>
+                        <li><a href="#">Movies</a></li>
+                        
+                        
+                    </ul>
+                    <ul>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="adults.html">Adults</a></li>
+                        <li><a href="#"><img src="images/profile-user.png" alt="user"></a></li>
+                    </ul>
+                   
+                </nav>
+            </div>
+        </div>
+
+    </div><!--Close nav position-->
+
+    <div class="welcome">
+        <h2>Welcome to Flashback!</h2>
+        <p>Sign in today to get your favourite music, movies, TV.</p>
+
+    </div><!--close welcome-->
+    <div class="tvseries-con">
+        <h2>TV Series</h2>
+        <div class="tvseries-info">
+        <img src="images/tvseries.jpg" alt="tv series">
+        <div class="tvseries-text">
+            <p>We have hundred of different channels waiting for you to discover.</p>
+            <a href="#">More Detail</a>
+        </div>
+        </div>
+    </div>
+    <div class="music-con">
+        <h2>Music</h2>
+        <div class="music-info">
+            <img src="images/music.jpg" alt="music">
+            <div class="music-text">
+                <p>Download and play offline! Over 70 million songs.</p>
+                <a href="#">More Detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="movie-con">
+        <h2>Movie</h2>
+        <div class="movie-info">
+            <img src="images/movie.jpg" alt="movie">
+            <div class="movie-text">
+                <p>Watch exclusive, old popular movies.</p>
+                <a href="#">More Detail</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="theme-con">
+        <h2>Your favourite channels all in one place.</h2>
+        <div class="theme-img">
+            <div class="theme-info">
+                <a href="#"><img src="images/adult.jpg" alt="adult"></a>
+                <h3>Adult</h3>
+            </div>
+            
+            <div class="theme-info">
+                <a href="#"><img src="images/kids.jpg" alt="kids"></a>
+                <h3>Kid</h3>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="recommanded">
+        <h2>Recommendation</h2>
+        <buttoncomponent @setmediatype="setComponent"></buttoncomponent>
+        <component :is="activeComponent"></component>
+
+    </div>
+   <footer>
+       <div class="term-con">
+           <img src="images/logo1.png" alt="logo">
+           <h2>Policy</h2>
+           <h2>Help</h2>
+           <h2>Terms of use</h2>
+       </div>
+       <nav class="socialCon">
+        <h2 class="hidden">Social Navigation</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a></li>
+            <li><a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/insta.png" alt="instagram icon"></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/utube.png" alt="youtube icon"></a></li>
+            
+        </ul>
+
+    </nav>
+    <div class="copyright">
+        <p>© Roku Flashback. All Rights Reserved</p>
+    </div>
+
+   </footer>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+    <script defer src="js/main_nav.js" type="module"></script>
+</body>
+</html>
