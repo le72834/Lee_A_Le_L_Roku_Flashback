@@ -28,7 +28,13 @@ To install the packages: `npm install`
 This is a basic HTML with Flex box and Grid layout. Some SASS, transitions and JavaScript function. If you don't know what any of these are, start here: www.mozilla.com
 
 Clone this to the location of your choice, open in your favourite editor and hack away!
-If you want to know more about design concept, star here: [Roadmap]()
+
+
+
+## Designer Notes
+If you want to know more about design concept, star here: [Roadmap Document]()
+
+## Developer Notes 
 If you don't know what any of steps of JavaScript, start here: [Roadmap Document](https://docs.google.com/document/d/14P9FuZTZHmYqgmW1jHsBhH7-ZLxbQzaZThaJ0uSiazo/edit?usp=sharing).
 
 ## Credits
